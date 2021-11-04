@@ -1,4 +1,8 @@
 
+body {
+    margin:0;
+}
+
 /* Header*/ 
 
 .header {
@@ -38,7 +42,7 @@ li{
     list-style-type: none;
 }
 
-/* Picture Content*/
+/* Intro Content*/
 
 .intro-content {
     display: flex;
@@ -47,11 +51,30 @@ li{
     justify-content: space-around;
 }
 
+.intro-content-left {
+    flex-grow: 1 0 auto;
+    width: 40%;
+    margin:2em;
+
+}
+
+.intro-content-right {
+    flex: 2 1 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 
 .pine {
-    /*width: 40em;*/ 
+    width: 30em; 
     height: auto;
-    margin: 5em;
+    margin: 1em;
+    margin-bottom: 3em;
+    margin-left:4em;
+    border-radius: 20px;
+    
+
 }
 
 .intro-content-main-text {
@@ -64,4 +87,69 @@ li{
     font-size: 18px;
     color:#e5e7eb
 
+}
+.sign-up-button {
+    background-color:#3882F6;
+    border-radius: 5px;
+    padding: 0.5em 2em;
+    color:#fff;
+    font-weight: bold;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+}
+
+/* Picture Content*/
+
+.picture-content-header {
+    text-align: center;
+    color: #1f2937;
+
+
+}
+.random-tree {
+    width: 20em;
+    height: auto;
+    margin:2em;
+    border-radius: 1em;
+    margin-bottom: 10px;
+}
+
+.list-of-trees {
+    display: flex;
+    justify-content: center;
+}
+
+.text-after-tree {
+    text-align: center;
+    size: 18px;
+    color: #232324;
+    margin-top: 0;
+}
+
+/*Quote Content*/ 
+
+.quote-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:#e5e7eb;
+    color: #1f2937; 
+    flex-wrap: wrap;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-style: italic;
+    width: 25em;
+    margin-bottom: 0;
+    margin-top: 2.5em;
+}
+
+.quote-name {
+    margin-left: 30%;
+    margin-bottom: 5em;
+    margin-top: 0;
+    font-weight:bold;
 }
